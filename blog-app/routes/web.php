@@ -22,3 +22,9 @@ Route::get('/', function () {
 Route::get('news', [NewsController::class, 'index']);
 
 Route::get('news/{id}', [NewsController::class, 'getNews'])->name('news-detail');
+
+Route::get('news/{category}', [NewsController::class, 'getNewsByCategory'])->name('category');
+
+Route::get('login', function () {
+    return view('login');
+});
