@@ -35,4 +35,15 @@ class NewsController extends Controller
             'categories' => $categories
     	]);
     }
+
+    public function getNewsByCategory($category){
+        $news = News::find($category);
+        $mainNews = News::orderBy('created_at', 'desc')->limit(1)->get()->first();
+        $categories = Category::all();
+        return view('news', [
+        	'mainNews' => $mainNews,
+            'news' => $news,
+            'categories' => $categories
+        ]);
+    }
 }

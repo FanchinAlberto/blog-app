@@ -55,16 +55,15 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
-
       .gradient-custom-2 {
 /* fallback for old browsers */
 background: #fccb90;
 
 /* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+background: -webkit-linear-gradient(to right, #5f5f5f, #4b4b4b, #333333, #000000);
 
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+background: linear-gradient(to right, #5f5f5f, #4b4b4b, #333333, #000000);
 }
 
 @media (min-width: 768px) {
